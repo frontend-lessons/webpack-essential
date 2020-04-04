@@ -1,0 +1,24 @@
+{
+  "name": "webpack-essential",
+  "version": "1.0.0",
+  "description": "Cómo crear un proyecto webpack esencial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontend-lessons/webpack-essential.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontend-lessons/webpack-essential/issues"
+  },
+  "homepage": "https://github.com/frontend-lessons/webpack-essential#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
