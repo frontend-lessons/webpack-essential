@@ -1,5 +1,5 @@
 module.exports = () => ({ plugins:
-   [ { outputPath: './', name: 'webpack.config.dump', depth: 4 } ],
+   [],
   context:
    '/home/temple/www/frontend/webpack/webpack-essential',
   entry: './src',
@@ -13,7 +13,7 @@ module.exports = () => ({ plugins:
      exprContextCritical: true,
      wrappedContextRegExp: /.*/,
      wrappedContextRecursive: true,
-     defaultRules: [ {}, {}, {}, {} ] },
+   },
   output:
    { filename: '[name].js',
      chunkFilename: '[name].js',
@@ -67,7 +67,7 @@ module.exports = () => ({ plugins:
      noEmitOnErrors: true,
      checkWasmTypes: true,
      minimize: true,
-     minimizer: [ {} ],
+     minimizer: [ ],
      nodeEnv: 'production' },
   resolve:
    { unsafeCache: true,
