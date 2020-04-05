@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = () => ({ 
   plugins: require('./config/webpack/webpack.plugins.js'),
-  context:
-   '/home/temple/www/frontend/webpack/webpack-essential',
+  context: path.resolve(__dirname),
   entry: './src',
   target: 'web',
   module: require('./config/webpack/webpack.module.js'),
