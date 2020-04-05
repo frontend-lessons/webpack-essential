@@ -15,8 +15,7 @@ module.exports = () => ({
      chunkCallbackName: 'webpackChunk',
      globalObject: 'window',
      libraryTarget: 'var',
-     path:
-      '/home/temple/www/frontend/webpack/webpack-essential/dist',
+     path: path.resolve(__dirname,'dist'),
      sourceMapFilename: '[file].map[query]',
      hotUpdateChunkFilename: '[id].[hash].hot-update.js',
      hotUpdateMainFilename: '[hash].hot-update.json',
