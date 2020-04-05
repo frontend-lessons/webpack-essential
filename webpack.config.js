@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = () => ({ 
   plugins: require('./config/webpack/webpack.plugins.js'),
   context:
