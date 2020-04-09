@@ -12,5 +12,9 @@ module.exports = [
           to:'css/[name].[hash].[ext]'
         }
     ]),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+        template: 'index.html',
+        inject: false,
+        minify: false
+    })
 ]
