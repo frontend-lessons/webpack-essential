@@ -24,5 +24,8 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-config-dump-plugin": "^1.0.5"
+  },
+  "dependencies": {
+    "bulma": "^0.8.2"
   }
 }
