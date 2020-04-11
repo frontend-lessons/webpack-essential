@@ -16,5 +16,11 @@ module.exports = [
         template: 'src/templates/index.html',
         inject: true,
         minify: false
-    }), 
+    }),
+    new HtmlWebpackPlugin({
+        template: "src/templates/sitemap.html",
+        filename: "sitemap.html",
+        inject: true,
+        minify: false
+    }) 
 ]
