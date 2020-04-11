@@ -14,7 +14,7 @@ module.exports = [
     ]),
     new HtmlWebpackPlugin({
         template: 'index.html',
-        inject: false,
+        inject: true,
         minify: false
     })
 ]
