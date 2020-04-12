@@ -13,6 +13,9 @@ module.exports = [
           to:'css/[name].[hash].[ext]'
         }
     ]),
+    new MiniCssExtractPlugin({
+        filename: 'css/bulma.[hash].css'
+    }), 
     new HtmlWebpackPlugin({
         template: 'src/templates/index.html',
         inject: true,
@@ -23,5 +26,5 @@ module.exports = [
         filename: "sitemap.html",
         inject: true,
         minify: false
-    }) 
+    }),
 ]
