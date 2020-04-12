@@ -8,4 +8,10 @@ module.exports = {
     exprContextCritical: true,
     wrappedContextRegExp: /.*/,
     wrappedContextRecursive: true,
+    rules: [
+        {
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader,'css-loader'],
+        },
+    ]
 }
