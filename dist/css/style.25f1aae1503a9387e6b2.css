@@ -4,3 +4,17 @@ h1 {
   font-family: Roboto;
   font-size: 3rem;
 }
+.emoji {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+}
+.emoji.emoji-1 {
+  background-image: url('/css/img/1.svg');
+}
+.emoji.emoji-2 {
+  background-image: url('/css/img/2.svg');
+}
+.emoji.emoji-3 {
+  background-image: url('/css/img/3.svg');
+}
