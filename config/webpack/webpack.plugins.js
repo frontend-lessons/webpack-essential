@@ -7,7 +7,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-        filename: 'css/bulma.[hash].css'
+        filename: 'css/style.[hash].css'
     }), 
     new HtmlWebpackPlugin({
         template: 'src/templates/index.html',
