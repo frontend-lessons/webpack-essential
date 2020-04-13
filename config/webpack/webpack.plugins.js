@@ -13,6 +13,14 @@ getIncrementalFileName.offset = 0;
 
 module.exports = [
     new CleanWebpackPlugin(),
+    new CopyPlugin([
+        {
+            transformPath: getIncrementalFileName,
+            from:'./src/css/img',
+            to:'css/img',
+            toType:'dir'
+        }
+    ]),   
     new MiniCssExtractPlugin({
         filename: 'css/style.[hash].css'
     }), 
