@@ -6,3 +6,4 @@ Cómo crear un proyecto [webpack](https://webpack.js.org/) **esencial**
 - **CAPÍTULO 2**: Proyecto con webpack.config.js ([LEER](doc/charpter-02.md))
 - **CAPÍTULO 3**: Uso de require en webpack.config.js ([LEER](doc/charpter-03.md))
 - **CAPÍTULO 4**: Uso de plugins en webpack.config.js ([LEER](doc/charpter-04.md))
+- **CAPÍTULO 5**: Uso combinado de plugins en webpack.config.js ([LEER](doc/charpter-05.md))
