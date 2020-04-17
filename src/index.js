@@ -1,4 +1,4 @@
-   import 'bulma/css/bulma.min.css';
+   // import 'bulma/css/bulma.min.css';
    import './css/style.css';   
    window.addEventListener('DOMContentLoaded', (event) => {
      let h1 = document.createElement('h1');
