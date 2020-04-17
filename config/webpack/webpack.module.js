@@ -10,11 +10,7 @@ module.exports = {
     wrappedContextRecursive: true,
     rules: [
         {
-          test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader,'css-loader'],
-        },
-        {
-          test: /\.s(a|c)ss$/,
+          test: /\.s?[ac]ss$/,
           use: [MiniCssExtractPlugin.loader,'css-loader','sass-loader'],
         },
     ]
