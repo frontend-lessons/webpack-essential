@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+@charset "utf-8"
+/*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
+@import "sass/utilities/_all"
+@import "sass/base/_all"
+@import "sass/elements/_all"
+@import "sass/form/_all"
+@import "sass/components/_all"
+@import "sass/grid/_all"
+@import "sass/layout/_all"
+
+h1 {
+  font-family: Roboto;
+  font-size: 3rem;
+}
+.emoji {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+}
+.emoji.emoji-1 {
+  background-image: url('/css/img/1.svg');
+}
+.emoji.emoji-2 {
+  background-image: url('/css/img/2.svg');
+}
+.emoji.emoji-3 {
+  background-image: url('/css/img/3.svg');
+}
