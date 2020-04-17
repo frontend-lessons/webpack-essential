@@ -1,5 +1,5 @@
    // import 'bulma/css/bulma.min.css';
-   import './css/style.css';   
+   import './css/style.scss';   
    window.addEventListener('DOMContentLoaded', (event) => {
      let h1 = document.createElement('h1');
      h1.innerHTML = 'Este es mi primer proyecto <em>webpack</em>!';
