@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let h1 = document.createElement("h1")
     h1.innerHTML = "Este es mi primer proyecto <em>webpack</em>!"
     document.body.appendChild(h1)
+    showBanner(WebpackLogo,"Webpack corporative logo","https://webpack.js.org","Web oficial de webpack",3000,document.querySelector("#main"))
 }) 
 
 window.addEventListener("DOMContentLoaded", () => {
