@@ -1,5 +1,5 @@
 import {showBanner} from "./components/banner-webpack"
-import WebpackLogo from "./assets/img/webpack-logo-on-white-bg.png"
+import WebpackLogo from "!!url-loader!./assets/img/webpack-logo-on-white-bg.png"
 import "./css/bulma.sass"
 import "./css/style.css"   
 
