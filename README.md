@@ -8,3 +8,4 @@ Cómo crear un proyecto [webpack](https://webpack.js.org/) **esencial**
 - **CAPÍTULO 4**: Uso de plugins en webpack.config.js ([LEER](doc/charpter-04.md))
 - **CAPÍTULO 5**: Uso combinado de plugins en webpack.config.js ([LEER](doc/charpter-05.md))
 - **CAPÍTULO 6**: Uso de loaders para CSS en webpack.config.js ([LEER](doc/charpter-06.md))
+- **CAPÍTULO 7**: Uso de loaders para assets en webpack.config.js ([LEER](doc/charpter-07.md))
