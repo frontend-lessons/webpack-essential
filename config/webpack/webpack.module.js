@@ -1,4 +1,21 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const FILE_LOADER = {
+  loader: "file-loader",
+  options: {
+    name: "[contenthash].[ext]",
+    outputPath: "/css/img/",
+  }
+}
+
+const URL_LOADER = {
+  loader: "url-loader",
+  options:{
+    fallback: FILE_LOADER,
+    limit: 32000  
+  }
+}
+
 module.exports = { 
   unknownContextRequest: ".",
   unknownContextRecursive: true,
