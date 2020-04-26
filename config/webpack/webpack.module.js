@@ -37,13 +37,7 @@ module.exports = {
     {
       test: /\.(png|svg)$/,
       use: [
-        {
-          loader: "file-loader",
-          options: {
-            name: "[contenthash].[ext]",
-            outputPath: "/css/img/",
-          }
-        }
+        FILE_LOADER
       ]
     },
   ]
