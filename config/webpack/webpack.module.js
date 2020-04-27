@@ -12,7 +12,7 @@ const URL_LOADER = {
   loader: "url-loader",
   options:{
     fallback: FILE_LOADER,
-    limit: 32000  
+    limit: 32768  
   }
 }
 
@@ -35,8 +35,13 @@ module.exports = {
   wrappedContextRecursive: true,
   rules: [
     {
-      test: /\.html/,
-      loader: "html-loader"
+      test: /\.html/,      
+      loader: "html-loader",
+      options: {
+        minimize: {
+          removeAttributeQuotes: false
+        }
+      }
     },
     {
       test: /\.s?[ac]ss$/,
