@@ -35,8 +35,13 @@ module.exports = {
   wrappedContextRecursive: true,
   rules: [
     {
-      test: /\.html/,
-      loader: "html-loader"
+      test: /\.html/,      
+      loader: "html-loader",
+      options: {
+        minimize: {
+          removeAttributeQuotes: false
+        }
+      }
     },
     {
       test: /\.s?[ac]ss$/,
