@@ -16,6 +16,14 @@ const URL_LOADER = {
   }
 }
 
+const SVG_URL_LOADER = {
+  loader: "svg-url-loader",
+  options: {
+    stripdeclarations:true,
+    limit: 32768,    
+  }
+}
+
 module.exports = { 
   unknownContextRequest: ".",
   unknownContextRecursive: true,
