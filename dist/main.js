@@ -159,7 +159,7 @@ function createAnchor(link,title=null){
   title && (anchor.title = title)
   return anchor
 }
-// CONCATENATED MODULE: ./node_modules/url-loader/dist/cjs.js?{'limit':32768,'name':'[contenthash].[ext]','outputPath': '/css/img/'}!./src/assets/img/webpack-logo-on-white-bg.png
+// CONCATENATED MODULE: ./src/assets/img/webpack-logo-on-white-bg.png
 /* harmony default export */ var webpack_logo_on_white_bg = (__webpack_require__.p + "/css/img/3b7bf087cbac835e6f7d4b7dc9711e72.png");
 // EXTERNAL MODULE: ./src/css/bulma.sass
 var bulma = __webpack_require__(0);
