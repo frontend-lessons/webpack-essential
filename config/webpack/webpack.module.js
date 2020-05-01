@@ -50,11 +50,14 @@ module.exports = {
     {
       test: /\.(png|svg)$/,
       oneOf: [
-        Object.assign(URL_LOADER,{issuer:/index\.js$/,test:/\.png$/}),
-        {
-          test: /\.svg$/,
-          loader: SVG_URL_LOADER
+        { test:/\.png$/,
+          issuer:/index\.js$/,          
+          ...URL_LOADER
         },
+        { test: /\.svg/,
+          issuer:/.*\.html$/,           
+          ...SVG_URL_LOADER
+        },        
         FILE_LOADER,
       ]
     },
