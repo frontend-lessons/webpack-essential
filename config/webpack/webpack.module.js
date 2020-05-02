@@ -35,7 +35,7 @@ module.exports = {
   wrappedContextRegExp: /.*/,
   wrappedContextRecursive: true,
   rules: [
-    {
+    /*{
       test: /\.html/,      
       loader: "html-loader",
       options: {
@@ -43,7 +43,7 @@ module.exports = {
           removeAttributeQuotes: false
         }
       }
-    },
+    },*/
     {
       test: /\.s?[ac]ss$/,
       use: [MiniCssExtractPlugin.loader,"css-loader","sass-loader"],
