@@ -20,7 +20,7 @@ const SVG_URL_LOADER = {
   loader: "svg-url-loader",
   options: {
     stripdeclarations:true,
-    limit: 3277,
+    limit: 32768,
     ...FILE_LOADER.options
   }
 }
