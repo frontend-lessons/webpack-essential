@@ -64,7 +64,7 @@ module.exports = {
         },
         { test: /\.svg/,
           issuer:/.*\.html$/,           
-          ...SVG_URL_LOADER
+          ...SVG_INLINE_LOADER
         },        
         FILE_LOADER,
       ]
@@ -74,14 +74,3 @@ module.exports = {
 
 
 
-const SVG_INLINE_LOADER = {
-  loader: path.resolve(__dirname,'loaders/svg-loader.js'), //"svg-url-loader",
-  options: {
-    //stripdeclarations:true,
-    limit: 32768,
-    loader:"svg-inline-loader",
-    removeSVGTagAttrs: false,
-    /*removingTagAttrs: ['style'],    */
-    fallback:FILE_LOADER,    
-  }
-}
