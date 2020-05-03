@@ -25,6 +25,13 @@ const SVG_URL_LOADER = {
   }
 }
 
+const SVG_INLINE_LOADER = {
+  loader: "svg-inline-loader",
+  options: {
+    removeSVGTagAttrs: false,
+  }
+}
+
 module.exports = { 
   unknownContextRequest: ".",
   unknownContextRecursive: true,
@@ -63,4 +70,18 @@ module.exports = {
       ]
     },
   ]
+}
+
+
+
+const SVG_INLINE_LOADER = {
+  loader: path.resolve(__dirname,'loaders/svg-loader.js'), //"svg-url-loader",
+  options: {
+    //stripdeclarations:true,
+    limit: 32768,
+    loader:"svg-inline-loader",
+    removeSVGTagAttrs: false,
+    /*removingTagAttrs: ['style'],    */
+    fallback:FILE_LOADER,    
+  }
 }
