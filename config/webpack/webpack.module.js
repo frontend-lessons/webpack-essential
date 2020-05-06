@@ -6,6 +6,7 @@ const FILE_LOADER = {
   options: {
     name: "[contenthash].[ext]",
     outputPath: "/css/img/",
+    esModule: false
   }
 }
 
