@@ -32,11 +32,40 @@ const schema = {
 };
 
 module.exports = function(source) {
-  const options = getOptions(this);
+  let loader, context
+  const options = getOptions(this)||{}
+  validateOptions(schema, options, "svg-loader")
 
-  validateOptions(schema, options, 'Example Loader');
-
-  // Apply some transformations to the source...
-
-  return `export default ${ JSON.stringify(source) }`;
+  if (! isLimitReached(options.limit,source)){
+    // El loader elegido es el preferente
+    loader = require( getLoader(options.loader || 'svg-inline-loader') )
+    // Context es la variable que se empleará como contexto "this" en la llamada al loader elegido
+    context = {
+      ...this, 
+      // Query es la propiedad que contiene las "options" empleadas para el loader elegido
+      query: getQuery(options.loader) || 
+        {
+          removeSVGTagAttrs: false
+        } 
+    }    
+  }else{    
+    // El loader elegido es el fallback
+    loader = require( getLoader(options.fallback || 'file-loader') )
+    // Context es la variable que se empleará como contexto "this" en la llamada al loader elegido
+    context = {
+      ...this, 
+      // Query es la propiedad que contiene las "options" empleadas para el loader elegido
+      query: getQuery(options.fallback) || 
+        {
+          name: "[contenthash].[ext]",
+          outputPath: "/css/img/",
+        }
+    }
+  }
+  try{
+    // En la llamada al loader elegido debe preservarse el contexto (objeto this replicado en context)
+    return loader.call(context, source)             
+  }catch(error){
+    return `export default ${ JSON.stringify(source) }`
+  }
 }
