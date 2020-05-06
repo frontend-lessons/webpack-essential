@@ -81,14 +81,14 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+module.exports = __webpack_require__.p + "/css/img/3b7bf087cbac835e6f7d4b7dc9711e72.png";
 
 /***/ }),
 /* 1 */
@@ -98,6 +98,12 @@
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -159,13 +165,15 @@ function createAnchor(link,title=null){
   title && (anchor.title = title)
   return anchor
 }
-// CONCATENATED MODULE: ./src/assets/img/webpack-logo-on-white-bg.png
-/* harmony default export */ var webpack_logo_on_white_bg = (__webpack_require__.p + "/css/img/3b7bf087cbac835e6f7d4b7dc9711e72.png");
+// EXTERNAL MODULE: ./src/assets/img/webpack-logo-on-white-bg.png
+var webpack_logo_on_white_bg = __webpack_require__(0);
+var webpack_logo_on_white_bg_default = /*#__PURE__*/__webpack_require__.n(webpack_logo_on_white_bg);
+
 // EXTERNAL MODULE: ./src/css/bulma.sass
-var bulma = __webpack_require__(0);
+var bulma = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./src/css/style.css
-var style = __webpack_require__(1);
+var style = __webpack_require__(2);
 
 // CONCATENATED MODULE: ./src/index.js
 
@@ -177,7 +185,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let h1 = document.createElement("h1")
   h1.innerHTML = "Este es mi primer proyecto <em>webpack</em>!"
   document.body.appendChild(h1)
-  showBanner(webpack_logo_on_white_bg,"Webpack corporative logo","https://webpack.js.org","Web oficial de webpack",3000,document.querySelector("#main"))
+  showBanner(webpack_logo_on_white_bg_default.a,"Webpack corporative logo","https://webpack.js.org","Web oficial de webpack",3000,document.querySelector("#main"))
 }) 
 
 
