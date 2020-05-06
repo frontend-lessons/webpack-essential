@@ -36,7 +36,7 @@ const SVG_INLINE_LOADER = {
 const SVG_LOADER = {
   loader: path.resolve(__dirname,'loaders/svg-loader.js'),
   options: {    
-    limit: 32768,
+    limit: 3277,
     loader: SVG_INLINE_LOADER,
     fallback:FILE_LOADER,    
   }
