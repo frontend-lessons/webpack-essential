@@ -69,3 +69,19 @@ module.exports = function(source) {
     return `export default ${ JSON.stringify(source) }`
   }
 }
+
+function isLimitReached(limit, content){
+  return (parseInt(limit||0)<content.length)  
+}
+
+function getLoader(loader){
+  if (typeof loader === 'object')
+    return loader.loader
+  return loader
+}
+
+function getQuery(loader){
+  if (typeof loader.options !== 'undefined')
+    return loader.options
+  return false
+}
