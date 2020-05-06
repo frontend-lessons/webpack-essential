@@ -74,7 +74,7 @@ module.exports = {
         },
         { test: /\.svg/,
           issuer:/.*\.html$/,           
-          ...SVG_INLINE_LOADER
+          ...SVG_LOADER
         },        
         FILE_LOADER,
       ]
