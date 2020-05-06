@@ -1,5 +1,5 @@
-import { getOptions } from 'loader-utils';
-import validateOptions from 'schema-utils';
+const { getOptions } = require('loader-utils');
+const validateOptions = require('schema-utils');
 
 const schema = {
   type: 'object',
@@ -10,7 +10,7 @@ const schema = {
   }
 };
 
-export default function(source) {
+module.exports = function(source) {
   const options = getOptions(this);
 
   validateOptions(schema, options, 'Example Loader');
